@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soul SMP — Play Now</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <canvas id="particles"></canvas>
+
+  <nav class="navbar">
+      <div class="nav-inner">
+          <a href="#home" class="logo">
+              <img src="logo.png" alt="Soul SMP" class="logo-img">
+              <span class="logo-text">Soul<span class="logo-accent">SMP</span></span>
+          </a>
+          <ul class="nav-links">
+              <li><a href="#home" class="active">Home</a></li>
+              <li><a href="#gamemodes">Gamemodes</a></li>
+              <li><a href="#vote">Vote</a></li>
+              <li><a href="#rules">Rules</a></li>
+              <li><a href="#crates">Crates</a></li>
+              <li><a href="#store">Store</a></li>
+              <li>
+                  <a href="https://discord.gg/5CCurVxj2r" target="_blank" class="discord-btn">Discord</a>
+              </li>
+          </ul>
+          <button class="hamburger" id="hamburger">
+              <span></span><span></span><span></span>
+          </button>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
+          <a href="#home">Home</a>
+          <a href="#gamemodes">Gamemodes</a>
+          <a href="#connect">Join</a>
+          <a href="#rules">Rules</a>
+          <a href="#crates">Crates</a>
+          <a href="#store">Store</a>
+          <a href="https://discord.gg/5CCurVxj2r" target="_blank" class="mobile-discord-btn">Join Discord</a>
+      </div>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-content-center">
+      <img src="logo.png" alt="Soul SMP" class="main-hero-logo">
+    </div>
+   <div class="hero-bottom">
+      <div class="hero-action" id="copy-ip-btn" data-ip="play.soulsmp.in">
+           <div class="action-icon">
+               <img src="server-icon.png" alt="Server Icon">
+           </div>
+           <div class="action-text">
+               <h4>SERVER IP</h4>
+               <div class="big-text">PLAY.SOULSMP.IN</div>
+               <p id="copy-status">CLICK TO COPY</p>
+           </div>
+       </div>
+      <a href="https://discord.gg/6W6ABA8C58" target="_blank" class="hero-action hero-right">
+          <div class="action-text">
+              <h4>DISCORD SERVER</h4>
+              <div class="big-text">JOIN COMMUNITY</div>
+              <p>CLICK TO JOIN</p>
+          </div>
+          <div class="action-icon">
+              <img src="discord-icon.png" alt="">
+          </div>
+      </a>
+  </div>
+  </section>
+
+  <section class="gamemodes" id="gamemodes">
+    <div class="section-header">
+      <p class="section-tag">What We Offer</p>
+      <h2>Why Play <span class="gradient-text">Soul SMP?</span></h2>
+    </div>
+    <div class="modes-grid">
+      <div class="mode-card featured" style="--accent:#00e5ff">
+        <div class="mode-badge">Popular</div>
+        <div class="mode-icon">⚔️</div>
+        <h3>Duels</h3>
+        <p>Challenge other players in competitive 1v1 battles.</p>
+      </div>
+      <div class="mode-card" style="--accent:#4ade80">
+        <div class="mode-icon">🏟</div>
+        <h3>PvP Arena</h3>
+        <p>Fight anytime and prove you're the strongest warrior.</p>
+      </div>
+      <div class="mode-card" style="--accent:#f87171">
+        <div class="mode-icon">💤</div>
+        <h3>AFK Area</h3>
+        <p>Earn rewards while staying safe.</p>
+      </div>
+      <div class="mode-card" style="--accent:#f59e0b">
+        <div class="mode-icon">🛒</div>
+        <h3>Player Shop</h3>
+        <p>Buy and sell items through the server economy..</p>
+      </div>
+      <div class="mode-card" style="--accent:#818cf8">
+        <div class="mode-icon">📦</div>
+        <h3>Crates</h3>
+        <p>Unlock exclusive rewards and rare items.</p>
+      </div>
+      <div class="mode-card" style="--accent:#fb923c">
+        <div class="mode-icon">🏷️</div>
+        <h3>Auction House</h3>
+        <p>Trade items with players using the auction system.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="vote-section" id="vote">
+    <div class="section-header">
+        <p class="section-tag">SUPPORT SOUL SMP</p>
+        <h2>Vote & Earn <span class="gradient-text">Rewards</span></h2>
+        <p class="vote-subtitle">Vote daily for Soul SMP and receive exciting in-game rewards, keys, coins, and exclusive bonuses.</p>
+    </div>
+    <div class="vote-grid">
+        <div class="vote-card">
+            <div class="vote-icon">🏆</div>
+            <h3>Vote Link 1</h3>
+            <p>Support Soul SMP by voting daily and earn valuable rewards.</p>
+            <a href="https://minecraft.buzz/vote/19175" target="_blank" class="vote-btn">Vote Now</a>
+        </div>
+        <div class="vote-card">
+            <div class="vote-icon">⭐</div>
+            <h3>Vote Link 2</h3>
+            <p>Support Soul SMP by voting daily and earn valuable rewards.</p>
+            <a href="https://minecraftservers.org/vote/683973" target="_blank" class="vote-btn">Vote Now</a>
+        </div>
+    </div>
+  </section>
+
+  <section class="rules-section" id="rules">
+    <div class="section-header">
+        <p class="section-tag">SERVER RULES</p>
+        <h2>Keep Soul SMP <span class="gradient-text">Fair & Fun</span></h2>
+    </div>
+    <div class="rules-grid">
+        <div class="rule-card">
+            <span class="rule-icon">⚔️</span>
+            <h3>No Hacking</h3>
+            <p>Using hacked clients, kill aura, fly hacks, x-ray or any unfair advantage is strictly prohibited.</p>
+        </div>
+        <div class="rule-card">
+            <span class="rule-icon">📦</span>
+            <h3>No Duping</h3>
+            <p>Item duplication glitches, exploits, or bug abuse will result in punishment.</p>
+        </div>
+        <div class="rule-card">
+            <span class="rule-icon">💬</span>
+            <h3>Respect Everyone</h3>
+            <p>Toxicity, harassment, discrimination, or excessive abuse is not allowed.</p>
+        </div>
+        <div class="rule-card">
+            <span class="rule-icon">📢</span>
+            <h3>No Advertising</h3>
+            <p>Advertising other servers, Discords, or communities is prohibited.</p>
+        </div>
+        <div class="rule-card">
+            <span class="rule-icon">🏠</span>
+            <h3>No Griefing Claims</h3>
+            <p>Do not grief or destroy protected player claims and builds.</p>
+        </div>
+        <div class="rule-card">
+            <span class="rule-icon">👮</span>
+            <h3>Follow Staff</h3>
+            <p>Respect staff decisions and cooperate during investigations.</p>
+        </div>
+    </div>
+  </section>
+
+  <section class="crates-section" id="crates">
+    <div class="section-header">
+      <p class="section-tag">PREMIUM CRATES</p>
+      <h2>Unlock Amazing <span class="gradient-text">Rewards</span></h2>
+    </div>
+    <div class="crates-grid">
+      <div class="crate-card common" onclick="openCrate('common')">
+        <img src="common-key.png" class="crate-key" alt="Common Crate">
+        <h3>Common Crate</h3>
+        <div class="crate-price">₹29</div>
+        <p class="view-text">Click to view rewards</p>
+      </div>
+      <div class="crate-card spawner" onclick="openCrate('spawner')">
+        <img src="spawner-key.png" class="crate-key" alt="Spawner Crate">
+        <h3>Gold Crate</h3>
+        <div class="crate-price">₹99</div>
+        <p class="view-text">Click to view rewards</p>
+      </div>
+      <div class="crate-card crimson" onclick="openCrate('crimson')">
+        <img src="crimson-key.png" class="crate-key" alt="Crimson Crate">
+        <h3>Crimson Crate</h3>
+        <div class="crate-price">₹129</div>
+        <p class="view-text">Click to view rewards</p>
+      </div>
+      <div class="crate-card soul" onclick="openCrate('soul')">
+        <img src="soul-key.png" class="crate-key" alt="Soul Crate">
+        <h3>Prime Crate</h3>
+        <div class="crate-price">₹149</div>
+        <p class="view-text">Click to view rewards</p>
+      </div>
+      <div class="crate-card amethyst" onclick="openCrate('amethyst')">
+        <div class="popular-badge">MOST POPULAR</div>
+        <img src="amethyst-key.png" class="crate-key" alt="Amethyst Crate">
+        <h3>Amethyst Crate</h3>
+        <div class="crate-price">₹199</div>
+        <p class="view-text">Click to view rewards</p>
+      </div>
+    </div>
+    <div class="crate-bottom">
+      <a href="https://discord.gg/5CCurVxj2r" class="btn-primary" target="_blank">Purchase via Discord Ticket</a>
+    </div>
+  </section>
+
+  <section class="store-cta" id="store">
+      <div class="store-inner">
+          <div class="rank-layout">
+              <div class="rank-card">
+                  <div class="rank-badge">⭐ PREMIUM RANK</div>
+                  <h2 class="rank-title">Soul+</h2>
+                  <div class="soul-price">₹399</div>
+                  <p class="rank-desc">Unlock premium perks and stand out across Soul SMP.</p>
+                  <a href="https://discord.gg/5CCurVxj2r" target="_blank" class="btn-buy">Purchase via Discord Ticket</a>
+              </div>
+              <div class="rank-grid">
+                  <div class="rank-feature">✔ + Chat Tag</div>
+                  <div class="rank-feature">✔ 5 Rows Ender Chest</div>
+                  <div class="rank-feature">✔ 5 Homes slots</div>
+                  <div class="rank-feature">✔ /fly in lobbies & AFK</div>
+                  <div class="rank-feature">✔ Get shards everywhere</div>
+                  <div class="rank-feature">✔ Get 4 shards everytime</div>
+                  <div class="rank-feature">✔ Special Soul Kit</div>
+                  <div class="rank-feature">✔ Get 9 Personal Vault</div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo">
+          <img src="logo.png" alt="Soul SMP" class="logo-img" style="height:28px" onerror="this.style.display='none'" />
+          <span class="logo-text">Soul<span class="logo-accent">SMP</span></span>
+        </div>
+        <p>Not affiliated with Mojang or Microsoft.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Server</h4>
+          <a href="#gamemode">Gamemodes</a>
+          <a href="#vote">Vote</a>
+        </div>
+        <div class="footer-col">
+          <h4>Community</h4>
+          <a href="https://discord.gg/5CCurVxj2r" target="_blank">Discord</a>
+          <a href="https://www.youtube.com/@soulsmpofficals" target="_blank">YouTube</a>
+          <a href="https://www.instagram.com/soulsmp.in/" target="_blank">Instagram</a>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="#rules">Rules</a>
+          <a href="https://discord.gg/5CCurVxj2r" target="_blank">Help Center</a>
+          <a href="https://discord.gg/5CCurVxj2r" target="_blank">Ban Appeals</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Soul SMP. All rights reserved.</span>
+      <span>
+        <a href="#" onclick="openLegalModal('privacy'); return false;">Privacy Policy</a> · 
+        <a href="#" onclick="openLegalModal('tos'); return false;">Terms of Service</a>
+      </span>
+    </div>
+  </footer>
+
+  <div class="crate-modal" id="crateModal">
+    <div class="crate-modal-box">
+      <button class="crate-close" onclick="closeCrate()">×</button>
+      <h2 id="modalTitle">Crate Name</h2>
+      <div class="crate-modal-content">
+        <p>In the server, you can choose one of these:</p>
+        <ul id="modalItems" class="modal-list"></ul>
+        <img id="modalImage" src="" class="modal-crate-img" alt="Crate Preview">
+        <p id="modalDescription" class="modal-description"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="legal-modal" id="legalModal">
+    <div class="legal-modal-box">
+      <button class="legal-close" onclick="closeLegalModal()">×</button>
+      <h2 id="legalModalTitle">Title</h2>
+      <div class="legal-modal-content" id="legalModalContent">
+        </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
